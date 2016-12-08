@@ -41,7 +41,7 @@ public class EchoDialog : IDialog<object>
         }
         else
         {
-            await context.PostAsync($"{this.count++}: Message Text {message.Text}");
+            await context.PostAsync($"{this.count++}: Input :  {message.Text}");
             context.Wait(MessageReceivedAsync);
         }
     }
